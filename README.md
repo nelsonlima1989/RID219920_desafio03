@@ -50,7 +50,9 @@ Criar uma aplicação web onde o usuário possa:
 
 Clique duas vezes ou utilize a extensão Live Server do VSCode.
 
-🧠 Lógica JavaScript
+---
+
+## 🧠 Lógica JavaScript
 A lógica do projeto é gerenciada com um array de objetos tasks, cada um representando uma tarefa com:
 
 {
@@ -61,25 +63,28 @@ A lógica do projeto é gerenciada com um array de objetos tasks, cada um repres
   done: false
 }
 
-🔧 Funções Principais
-createNewTask(): Cria uma nova tarefa ao enviar o formulário
+##🔧 Funções Principais
+-createNewTask(): Cria uma nova tarefa ao enviar o formulário
 
-renderTasks(): Re-renderiza todas as tarefas na tela
+-renderTasks(): Re-renderiza todas as tarefas na tela
 
-markTaskAsDone(taskObj): Marca a tarefa como concluída e re-renderiza
+-markTaskAsDone(taskObj): Marca a tarefa como concluída e re-renderiza
 
-updateFooterCount(): Atualiza o rodapé com o número de tarefas concluídas
+-updateFooterCount(): Atualiza o rodapé com o número de tarefas concluídas
 
-validateForm(): Verifica se os campos foram preenchidos
+-validateForm(): Verifica se os campos foram preenchidos
 
-📱 Responsividade
+---
+
+##📱 Responsividade
 Com uso de media queries, o layout se adapta automaticamente para:
 
 Celulares: Campos e botões reorganizados verticalmente
 
 Tablets e Desktop: Layout em linha, com maior aproveitamento da largura
 
-📌 Exemplos de Uso
+##📌 Exemplos de Uso:
+
 Adicionar uma tarefa: Preencha os campos e clique no botão +
 
 Concluir uma tarefa: Clique no botão "Concluir" abaixo da tarefa
@@ -88,26 +93,35 @@ Ver status: Tarefas concluídas aparecem com texto riscado e botão desativado
 
 Contador: Rodapé atualiza automaticamente o número de tarefas finalizadas
 
-📦 Melhorias Futuras
- Armazenamento no localStorage
+---
 
- Filtro por etiquetas
+##📦 Melhorias Futuras
 
- Opção de editar tarefas
+ -Armazenamento no localStorage
 
- Ordenação por data
+ -Filtro por etiquetas
 
- Modo escuro
+ -Opção de editar tarefas
 
-🙌 Créditos
+ -Ordenação por data
+
+ -Modo escuro
+
+ ---
+
+##🙌 Créditos
 Projeto desenvolvido como parte da formação em Programação Full Stack na Escola DNC.
 
-✍️ Autor
-Nelson Lima
-📧 nelson.lima1989@hotmail.com
-🔗 LinkedIn
+---
 
-📄 Licença
+##✍️ Autor
+-Nelson Lima
+-📧 nelson.lima1989@hotmail.com
+-🔗 LinkedIn: https://www.linkedin.com/in/nelson-lima-0889577b
+
+---
+
+##📄 Licença
 Este projeto é apenas para fins educacionais e não possui licença comercial.
 
 “A prática constante é o caminho para o domínio do desenvolvimento.” 🚀
