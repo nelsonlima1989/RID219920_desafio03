@@ -16,12 +16,6 @@ Criar uma aplicação web onde o usuário possa:
 
 ---
 
-## 🖼️ Demonstração da Interface
-
-📸 *Adicione aqui uma imagem ou GIF da aplicação funcionando.*
-
----
-
 ## ⚙️ Tecnologias Utilizadas
 
 - **HTML5**: Estrutura da página  
