@@ -1,82 +1,119 @@
-# Lista de Tarefas Simples 📝
+# ✅ Board de Tarefas - Desafio 03 | Módulo de JavaScript - Escola DNC
 
-Este projeto foi feito como desafio da Escola DNC para colocar em prática tudo que aprendi no módulo de JavaScript 🚀.
-
----
-
-## O que ele faz? 🤔
-
-- Mostra uma lista de tarefas com título, tag, data de criação e status (concluída ✅ ou não ❌).  
-- Permite adicionar novas tarefas pelo formulário (com checagem para não deixar campos vazios).  
-- Dá para marcar as tarefas como concluídas com um clique, que risca o texto e atualiza o contador no rodapé 📊.  
-- Guarda as tarefas numa lista na memória, tudo dinamicamente com JavaScript.
+Este projeto foi desenvolvido como parte do **Desafio 03** do módulo de **JavaScript** da **Escola DNC**, com o objetivo de praticar e aplicar os principais conceitos da linguagem na criação de uma aplicação **To-Do List** (quadro de tarefas).
 
 ---
 
-## Visual e experiência 🖌️
+## 📌 Objetivo
 
-- Layout clean, com fundo claro (#f5f9ff) e conteúdo centralizado na tela para foco na lista.  
-- Caixa principal (`main`) com fundo branco, cantos arredondados e sombra suave para destaque.  
-- Tipografia moderna usando *Rubik* e *Inter*, com tamanhos adaptados para boa leitura.  
-- Formulário de criação de tarefa alinhado horizontalmente em telas grandes e em coluna no mobile, garantindo ótima usabilidade.  
-- Botões azuis com efeito hover para feedback visual.  
-- Tags destacadas com bordas arredondadas e cores suaves para melhor identificação.  
-- Tarefas concluídas riscadas e com cor mais clara, indicando status visualmente.  
-- Rodapé com contador alinhado à direita, separado por linha sutil no topo.  
-- **Design totalmente responsivo:**  
-  - Adaptação automática para telas pequenas (até 767px), com empilhamento de elementos, inputs e botões que se ajustam à largura da tela, mantendo usabilidade e estética.  
-  - Ajustes precisos de fontes, margens e espaçamentos para garantir conforto em qualquer dispositivo — desktop, tablet ou celular.
+Criar uma aplicação web onde o usuário possa:
+
+- Adicionar tarefas com nome e etiqueta (tag)
+- Visualizar todas as tarefas cadastradas
+- Marcar tarefas como concluídas
+- Visualizar a contagem de tarefas finalizadas
+- Observar um layout responsivo em diferentes tamanhos de tela
 
 ---
 
-## Como funciona por dentro? 🔧
+## 🖼️ Demonstração da Interface
 
-- As tarefas ficam guardadas num array chamado `tasks`, cada uma com um id único, descrição, tag, data e status.  
-- Tem funções para:  
-  - Criar IDs únicos para cada tarefa.  
-  - Validar o formulário antes de criar uma tarefa nova.  
-  - Criar o HTML para mostrar cada tarefa no site.  
-  - Atualizar a lista toda na tela sempre que algo muda.  
-  - Marcar as tarefas como feitas e atualizar a visualização.  
-  - Resetar o formulário depois que a tarefa é adicionada.
+📸 *Adicione aqui uma imagem ou GIF da aplicação funcionando.*
 
 ---
 
-## Como usar? 🖥️
+## ⚙️ Tecnologias Utilizadas
 
-1. Abra o arquivo HTML.  
-2. Você vai ver algumas tarefas já criadas para começar.  
-3. Preencha o formulário com a tarefa e a tag, e clique em adicionar.  
-4. Clique em “Concluir” para marcar uma tarefa como feita.  
-5. Veja o rodapé mostrando quantas tarefas você já concluiu 🎉.
+- **HTML5**: Estrutura da página  
+- **CSS3**: Estilização e responsividade  
+- **JavaScript (ES6+)**: Lógica da aplicação (DOM, eventos, estado)  
+- **Google Fonts**: Fontes Rubik e Inter  
 
----
-
-## Tecnologias usadas ⚙️
-
-- HTML, CSS e JavaScript puro (sem frameworks).  
-- Manipulação do DOM para tudo acontecer na hora, sem precisar recarregar a página.  
-- Eventos para capturar ações do usuário, como enviar formulário e clicar em botões.  
-- CSS moderno com Flexbox para layout flexível e responsivo.  
-- Fonte principal *Rubik* para modernidade e legibilidade.  
 
 ---
 
-## O que pode melhorar? 💡
+## 💻 Funcionalidades
 
-- Salvar as tarefas no navegador (LocalStorage) para não perder ao fechar a página.  
-- Permitir editar e excluir tarefas.  
-- Criar filtros para ver só tarefas de uma tag ou só as pendentes.  
-
----
-
-## Quem fez? 🙋‍♂️
-
-Nelson Lima - nelson.lima1989@hotmail.com
+✅ Cadastro de tarefas com nome e etiqueta  
+✅ Exibição dinâmica das tarefas  
+✅ Botão "Concluir" para marcar a tarefa como feita  
+✅ Estilo visual diferenciado para tarefas concluídas  
+✅ Contador de tarefas concluídas no rodapé  
+✅ Validação de campos obrigatórios  
+✅ Layout adaptado para dispositivos móveis  
 
 ---
 
-## Licença 📄
+## 🚀 Como Executar o Projeto Localmente
 
-Projeto open-source sob licença MIT. Fique à vontade para usar e contribuir!
+1. **Clone este repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repo.git
 
+2. cd seu-repo
+
+3. Abra o arquivo index.html no navegador
+
+Clique duas vezes ou utilize a extensão Live Server do VSCode.
+
+🧠 Lógica JavaScript
+A lógica do projeto é gerenciada com um array de objetos tasks, cada um representando uma tarefa com:
+
+{
+  id: "task-1",
+  task: "Descrição da tarefa",
+  tag: "Categoria",
+  date: "DD/MM/AAAA",
+  done: false
+}
+
+🔧 Funções Principais
+createNewTask(): Cria uma nova tarefa ao enviar o formulário
+
+renderTasks(): Re-renderiza todas as tarefas na tela
+
+markTaskAsDone(taskObj): Marca a tarefa como concluída e re-renderiza
+
+updateFooterCount(): Atualiza o rodapé com o número de tarefas concluídas
+
+validateForm(): Verifica se os campos foram preenchidos
+
+📱 Responsividade
+Com uso de media queries, o layout se adapta automaticamente para:
+
+Celulares: Campos e botões reorganizados verticalmente
+
+Tablets e Desktop: Layout em linha, com maior aproveitamento da largura
+
+📌 Exemplos de Uso
+Adicionar uma tarefa: Preencha os campos e clique no botão +
+
+Concluir uma tarefa: Clique no botão "Concluir" abaixo da tarefa
+
+Ver status: Tarefas concluídas aparecem com texto riscado e botão desativado
+
+Contador: Rodapé atualiza automaticamente o número de tarefas finalizadas
+
+📦 Melhorias Futuras
+ Armazenamento no localStorage
+
+ Filtro por etiquetas
+
+ Opção de editar tarefas
+
+ Ordenação por data
+
+ Modo escuro
+
+🙌 Créditos
+Projeto desenvolvido como parte da formação em Programação Full Stack na Escola DNC.
+
+✍️ Autor
+Nelson Lima
+📧 nelson.lima1989@hotmail.com
+🔗 LinkedIn
+
+📄 Licença
+Este projeto é apenas para fins educacionais e não possui licença comercial.
+
+“A prática constante é o caminho para o domínio do desenvolvimento.” 🚀
