@@ -215,6 +215,8 @@ footer{
 
     input{
         width: 100%;
+
+       
     }
 
     .crate-todo-section{
@@ -263,16 +265,24 @@ footer{
         align-items: center;
     }
 
-    #content{
-        margin: 0;
-        margin-top: 1rem;
-        margin-left: 3.3rem;
-        width: 100%;
-        max-width: 25rem;        
+    #card-tasks{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #content{
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0;
+        padding-bottom: 1rem;
+        width: 100%;
+        max-width: 25rem;        
+        display: flex;
+        flex-direction: column;
+        
+        
     }
 
     #card{
@@ -286,6 +296,14 @@ footer{
     ul > li:last-child{
         display: flex;
         flex-direction: column;
+    }
+
+    ul > li:first-child{
+        padding: 0;
+    }
+
+    ul > li > h2{
+        margin: 0;
     }
 
     #tag-marked{
